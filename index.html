@@ -27,6 +27,7 @@
     "@type": "Organization",
     "name": "Creative Complex Works SRL",
     "url": "https://www.creativecomplexworks.com",
+    "logo": "https://www.creativecomplexworks.com/favicon-192.png",
     "contactPoint": [{
       "@type": "ContactPoint",
       "email": "support@creativecomplexworks.com",
@@ -130,16 +131,124 @@
         <div class="grid products-grid">
           <article class="product">
             <h3><a href="https://www.theapp.vip/" target="_blank" rel="noopener">TheApp.vip</a></h3>
-            <p>A curated platform / product — full-stack development and ongoing maintenance.</p>
+            <p>A powerful live-streaming toolkit and engagement engine — designed to connect creators and audiences, handle donations, and integrate seamlessly with streaming tools (OBS, browser sources). We built and maintain TheApp.vip including its dashboards, alert system, analytics, and donation engine.</p>
             <a class="link" href="https://www.theapp.vip/" target="_blank" rel="noopener">Visit TheApp.vip →</a>
           </article>
 
           <article class="product">
             <h3><a href="https://www.jobbva.com/" target="_blank" rel="noopener">JobBVA</a></h3>
-            <p>A recruitment/job platform product — development, integrations and UX improvements.</p>
+            <p>JobBVA is a modern job board that brings employers and candidates together with a clean UX and advanced matching features. We support the full employer and candidate lifecycle:</p>
+            <ul>
+              <li><strong>Employer features:</strong> job posting management, applicant tracking, employer profiles/branding, promoted/sponsored listings, candidate search and filtering, and analytics for listing performance.</li>
+              <li><strong>Candidate features:</strong> resume/CV upload, quick apply, job alerts, saved searches and application history.</li>
+              <li><strong>Matching & discovery:</strong> relevance-based search, category & location filters, and SEO-friendly job pages to increase organic visibility.</li>
+              <li><strong>Integrations & automations:</strong> email notifications, ATS integrations, and analytics to measure applications, views and conversions.</li>
+            </ul>
+            <p>We helped with design, development, and SEO optimizations to ensure high visibility for listings and an excellent candidate experience.</p>
             <a class="link" href="https://www.jobbva.com/" target="_blank" rel="noopener">Visit JobBVA →</a>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="theapp" class="section theapp-section">
+      <div class="container">
+        <h2>TheApp.vip — Features & Dashboards</h2>
+        <p class="section-sub">TheApp.vip is a creator-first platform for live streaming engagement, donations and overlays. Below are the main features and how to use them.</p>
+
+        <article class="card">
+          <h3>TheApp Dashboard</h3>
+          <p>The central hub where you connect your platforms and review analytics. From here you can manage connections to TikTok, YouTube and Kick, and view performance across time ranges (last 7 days, last month, last year).</p>
+          <p><strong>Analytics text:</strong> You can view analytics for your live sessions, including statistics on likes, comments, shares, views, and donations. Additionally, there's a separate chart for donations categorized by link.</p>
+        </article>
+
+        <article class="card">
+          <h3>TikTok Dashboard — Alerts, Goals, Chatbots, Trolls, Tops</h3>
+          <p>Complete control over TikTok live overlays and behaviors. All alerts provide an OBS integration URL for use as a browser source.</p>
+          <ul>
+            <li><strong>Alerts (Member, Gift, Like, Emote, Envelope, Follow, Share, Subscribe):</strong> rename alerts, choose designs, set priority (0–3), toggle overwrite-of-lower-priority behavior, restrict triggers (everyone, followers, subscribers, moderators, new gifters, top gifters, specific users), and set min/max activation values where applicable (e.g. gift coin minimums, like min/max).</li>
+            <li><strong>Goals:</strong> choose data source (current live or all-time/general stats), select metric (Likes, Donations, Shares, Comments), set target value, and pick a design for the visual goal bar.</li>
+            <li><strong>Chat Bots (TTS):</strong> configure trigger prefix (e.g. "/"), language, gender, speed, pitch, allowed triggerers, and optional point cost if Points System enabled.</li>
+            <li><strong>Trolls:</strong> let viewers trigger keypresses, mouse moves/clicks or sequences (cost via gifts or system points), configure durations (ms), multi-key behavior and designs for the overlay explanation.</li>
+            <li><strong>Tops:</strong> leaderboards for most donations/likes/shares/comments; select number of top users and data source.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Donations Dashboard</h3>
+          <p>TheApp.vip donation engine is designed to maximize donations and let you customize how donations impact your stream (alerts, tops, goals, trolls, history).</p>
+
+          <details>
+            <summary>Alerts</summary>
+            <p>Donation alerts are highly configurable: name, design, priority (0–3), overwrite behavior, min/max activation ranges and optional TTS with voice/gender selection.</p>
+          </details>
+
+          <details>
+            <summary>Goals</summary>
+            <p>Set date ranges and target values to display donation progress in real time.</p>
+          </details>
+
+          <details>
+            <summary>Trolls</summary>
+            <p>Donation-triggered trolls work like TikTok trolls but are activated by payments through TheApp donation system. Configure cost, key sequences, durations and designs.</p>
+          </details>
+
+          <details>
+            <summary>Tops & History</summary>
+            <p>Create donation leaderboards, set how many top users to display, and review donation history (who donated and how much).</p>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>Points System</h3>
+          <p>Encourage engagement with a points economy — viewers can spend coins to receive points and redeem them on features such as Trolls or Chatbots.</p>
+          <ul class="feature-list">
+            <li>Configure how many coins viewers must spend and the reward in points.</li>
+            <li>Set the platform scope (currently TikTok, more platforms coming).</li>
+            <li>Use points to gate interactive features and special overlays.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Design & Gallery</h3>
+          <p>The design module is a powerful visual editor for building alert overlays and animations. You can combine images, timelines and tags to create complex animations.</p>
+          <ul class="feature-list">
+            <li>Use tags (placeholders) such as <code>{sender}</code> or <code>{message}</code> in designs to show dynamic info (e.g. "Jay sent Heart").</li>
+            <li>Open the Info modal (top-right) to see available tags and examples.</li>
+            <li>Upload custom assets in Gallery and reuse them across designs.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Gallery</h3>
+          <p>Upload images, GIFs, audio and videos to be used by designs and alerts. Assets are available in the design editor and can be used as overlays in OBS.</p>
+        </article>
+
+        <article class="card">
+          <h3>Chat</h3>
+          <p>Unified chat for TikTok, YouTube and Kick. Merge gifts from multiple platforms into a single view, customize layout and visual style.</p>
+          <ul class="feature-list">
+            <li>Adjust proportions between messages and gifts with a slider.</li>
+            <li>Display as row or column, change font, size, letter spacing and background opacity.</li>
+            <li>Color-code message backgrounds to differentiate subscribers, paid subscribers and non-subscribers.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Groups</h3>
+          <p>Create link groups to combine multiple alerts and trolls into one OBS link. Useful for loading many overlays with a single browser source.</p>
+        </article>
+
+        <article class="card">
+          <h3>Referrals</h3>
+          <p>Get a unique referral link to invite others. See monthly earnings and the last 5 months of referral performance.</p>
+        </article>
+
+        <article class="card">
+          <h3>Profile & Settings</h3>
+          <p>Change your donation nickname, manage account settings and configure platform-specific options in the settings submenu.</p>
+        </article>
+
       </div>
     </section>
 
